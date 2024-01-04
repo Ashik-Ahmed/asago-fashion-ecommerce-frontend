@@ -4,6 +4,7 @@ import bannerImgOne from '@/app/assets/bannerImgOne.webp';
 import bannerImgTwo from '@/app/assets/bannerImgTwo.webp';
 import bannerImgThree from '@/app/assets/bannerImgThree.webp';
 import NewArrival from "@/components/NewArrival";
+import HomeBanner from "@/components/HomeBanner";
 
 export default function Home() {
 
@@ -116,6 +117,7 @@ export default function Home() {
     <main className="text-sm overflow-hidden min-h-screen">
       <Banner banners={banners} />
       <NewArrival products={products} />
+      <HomeBanner />
     </main>
   )
 }
