@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import logo from "@/app/assets/logoBlack.png";
+import logo from "@/app/assets/logo.jpeg";
 import { FaSearch } from "react-icons/fa";
 import { IoCloseOutline } from "react-icons/io5";
 import { HiMenuAlt2 } from "react-icons/hi";
@@ -36,7 +36,7 @@ const Navbar = () => {
                 <Link href={"/"}>
                     <Image src={logo} alt="logo" className="w-20" />
                 </Link>
-                <div className="relative w-full hidden lg:inline-flex lg:w-[600px] h-10 text-base text-primeColor border-[1px] border-black items-center gap-2 justify-between px-6 rounded-md">
+                {/* <div className="relative w-full hidden lg:inline-flex lg:w-[600px] h-10 text-base text-primeColor border-[1px] border-black items-center gap-2 justify-between px-6 rounded-md">
                     <input
                         type="text"
                         placeholder="Search your products here"
@@ -52,7 +52,7 @@ const Navbar = () => {
                     ) : (
                         <FaSearch className="w-5 h-5 hover:cursor-pointer" />
                     )}
-                </div>
+                </div> */}
                 <div className="hidden md:inline-flex items-center gap-2">
                     {navBarList.map((item) => (
                         <Link

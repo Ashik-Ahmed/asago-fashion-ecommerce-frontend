@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { HiOutlineMenuAlt4 } from "react-icons/hi";
 import { FaSearch, FaUser, FaCaretDown, FaShoppingCart } from "react-icons/fa";
 import Link from "next/link";
+import Image from "next/image";
 
 const HeaderBottom = () => {
     // const products = useSelector((state) => state.orebiReducer.products);
@@ -126,7 +127,7 @@ const HeaderBottom = () => {
                                             key={item._id}
                                             className="max-w-[600px] h-28 bg-gray-100 mb-3 flex items-center gap-3"
                                         >
-                                            <img className="w-24" src={item.img} alt="productImg" />
+                                            <Image className="w-24" src={item.img} alt="productImg" />
                                             <div className="flex flex-col gap-1">
                                                 <p className="font-semibold text-lg">
                                                     {item.productName}
