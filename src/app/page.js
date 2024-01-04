@@ -6,6 +6,7 @@ import bannerImgThree from '@/app/assets/bannerImgThree.webp';
 import NewArrival from "@/components/NewArrival";
 import HomeBanner from "@/components/HomeBanner";
 import BestSellers from "@/components/BestSellers";
+import YearProduct from "@/components/YearProduct";
 
 export default function Home() {
 
@@ -120,6 +121,7 @@ export default function Home() {
       <NewArrival products={products} />
       <HomeBanner />
       <BestSellers products={products.slice(0, 4)} title="Best Sellers" />
+      <YearProduct />
     </main>
   )
 }
