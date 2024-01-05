@@ -125,7 +125,7 @@ const SingleProduct = () => {
         <Container className="my-10">
             <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-6 gap-4 h-full -mt-5 xl:-mt-8 bg-gray-100 p-4">
                 <div>
-                    <Onsale products={products} />
+                    <Onsale products={products.slice(0, 3)} />
                 </div>
                 <div className="h-full xl:col-span-2">
                     <Image
@@ -140,7 +140,7 @@ const SingleProduct = () => {
                     <ProudctInfo product={product} />
                 </div>
             </div>
-            <PortableText value={product} components={RichText} />
+            {/* <PortableText value={product} components={RichText} /> */}
         </Container>
     )
 }
