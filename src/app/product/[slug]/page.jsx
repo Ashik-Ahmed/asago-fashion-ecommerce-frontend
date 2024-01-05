@@ -1,9 +1,23 @@
 import Container from '@/components/Container'
 import Onsale from '@/components/OnSale'
+import ProudctInfo from '@/components/ProductInfo'
+import { RichText } from '@/components/RichText'
 import Image from 'next/image'
 import React from 'react'
+import PortableText from 'react-portable-text'
 
 const SingleProduct = () => {
+    const product = {
+        "imageLink": "https://artisanclick.com/wp-content/uploads/2021/12/274-scaled.jpg",
+        "slug": "product-slug-1",
+        "isNew": true,
+        "title": "Product 1",
+        "rowprice": 125,
+        "price": 99.99,
+        "brand": "Brand A",
+        "ratings": 4.5,
+        "body": "This is the body"
+    }
     const products = [
         {
             "imageLink": "https://artisanclick.com/wp-content/uploads/2021/12/274-scaled.jpg",
@@ -115,7 +129,7 @@ const SingleProduct = () => {
                 </div>
                 <div className="h-full xl:col-span-2">
                     <Image
-                        src={urlFor(product?.image).url()}
+                        src={product?.imageLink}
                         alt="product image"
                         className="w-full h-full object-contain"
                         width={500}
@@ -126,7 +140,7 @@ const SingleProduct = () => {
                     <ProudctInfo product={product} />
                 </div>
             </div>
-            <PortableText value={product?.body} components={RichText} />
+            <PortableText value={product} components={RichText} />
         </Container>
     )
 }
