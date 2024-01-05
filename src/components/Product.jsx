@@ -5,13 +5,12 @@ import { MdOutlineStarPurple500 } from "react-icons/md";
 import { AiOutlineShopping } from "react-icons/ai";
 
 const Product = ({ product, bg }) => {
-    console.log(product);
 
     return (
         <div className="w-full relative group border-[1px] border-black hover:shadow-lg duration-200 shadow-gray-500 rounded-md overflow-hidden group">
             <div className="w-full h-80 flex items-center justify-center bg-white overflow-hidden">
                 <div className={`relative ${bg}`}>
-                    <Link href={"/"}>
+                    <Link href={`/product/${product?.slug}`}>
                         <Image
                             src={product?.imageLink}
                             alt="product image"
@@ -31,7 +30,7 @@ const Product = ({ product, bg }) => {
                             Add to bag
                         </Link>
                         <Link
-                            href={"/"}
+                            href={`/product/${product?.slug}`}
                             className="bg-gray-800 text-gray-200 px-4 py-2 text-xs rounded-full flex items-center gap-1 hover:bg-gray-950 hover:text-white duration-200"
                         >
                             <span>
