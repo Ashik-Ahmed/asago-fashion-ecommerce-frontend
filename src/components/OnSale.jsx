@@ -12,7 +12,7 @@ const Onsale = ({ products }) => {
                 {products?.map((item) => (
                     <Link
                         key={item?._id}
-                        href={`/product/${item?.slug?.current}`}
+                        href={`/product/${item?.slug}`}
                         className="flex items-center gap-4 border-b-[1px] border-b-gray-300 py-2"
                     >
                         <Image
