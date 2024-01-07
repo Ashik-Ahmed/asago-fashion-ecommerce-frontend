@@ -5,6 +5,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import PageButton from '@/components/PageButton';
 import HeaderBottom from '@/components/HeaderBottom';
+import Layout from '@/components/Layout';
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -18,11 +19,13 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <Navbar />
-        <HeaderBottom />
-        <PageButton />
-        {children}
+      <body className="font-display">
+        <Layout>
+          <Navbar />
+          <HeaderBottom />
+          <PageButton />
+          {children}
+        </Layout>
       </body>
     </html>
   )
