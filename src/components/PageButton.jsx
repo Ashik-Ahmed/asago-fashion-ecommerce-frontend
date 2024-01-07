@@ -1,8 +1,14 @@
+"use client";
+
 import { RiShoppingCart2Fill } from "react-icons/ri";
 import { MdSwitchAccount } from "react-icons/md";
 import Link from "next/link";
+import { useSelector } from "react-redux";
 
 const PageButton = () => {
+    const { productData } = useSelector((state) => state.asago);
+    // console.log(productData);
+
     return (
         <div className="fixed top-60 right-2 z-20 flex flex-col gap-2">
             <Link

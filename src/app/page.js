@@ -14,6 +14,7 @@ export default function Home() {
 
   const products = [
     {
+      _id: 1,
       "imageLink": "https://artisanclick.com/wp-content/uploads/2021/12/274-scaled.jpg",
       "slug": "product-slug-1",
       "isNew": true,
@@ -24,6 +25,7 @@ export default function Home() {
       "ratings": 4.5
     },
     {
+      _id: 2,
       "imageLink": "https://artisanclick.com/wp-content/uploads/2021/12/274-scaled.jpg",
       "slug": "product-slug-2",
       "isNew": false,
@@ -34,6 +36,7 @@ export default function Home() {
       "ratings": 4.8
     },
     {
+      _id: 3,
       "imageLink": "https://artisanclick.com/wp-content/uploads/2021/12/274-scaled.jpg",
       "slug": "product-slug-3",
       "isNew": true,
@@ -44,6 +47,7 @@ export default function Home() {
       "ratings": 3.9
     },
     {
+      _id: 4,
       "imageLink": "https://artisanclick.com/wp-content/uploads/2021/12/274-scaled.jpg",
       "slug": "product-slug-4",
       "isNew": false,
@@ -54,6 +58,7 @@ export default function Home() {
       "ratings": 4.2
     },
     {
+      _id: 5,
       "imageLink": "https://artisanclick.com/wp-content/uploads/2021/12/274-scaled.jpg",
       "slug": "product-slug-5",
       "isNew": true,
@@ -64,6 +69,7 @@ export default function Home() {
       "ratings": 5
     },
     {
+      _id: 6,
       "imageLink": "https://artisanclick.com/wp-content/uploads/2021/12/274-scaled.jpg",
       "slug": "product-slug-6",
       "isNew": false,
@@ -74,6 +80,7 @@ export default function Home() {
       "ratings": 3.5
     },
     {
+      _id: 7,
       "imageLink": "https://artisanclick.com/wp-content/uploads/2021/12/274-scaled.jpg",
       "slug": "product-slug-7",
       "isNew": true,
@@ -84,6 +91,7 @@ export default function Home() {
       "ratings": 4.1
     },
     {
+      _id: 8,
       "imageLink": "https://artisanclick.com/wp-content/uploads/2021/12/274-scaled.jpg",
       "slug": "product-slug-8",
       "isNew": false,
@@ -94,6 +102,7 @@ export default function Home() {
       "ratings": 4.7
     },
     {
+      _id: 9,
       "imageLink": "https://artisanclick.com/wp-content/uploads/2021/12/274-scaled.jpg",
       "slug": "product-slug-9",
       "isNew": true,
@@ -104,6 +113,7 @@ export default function Home() {
       "ratings": 3.8
     },
     {
+      _id: 10,
       "imageLink": "https://artisanclick.com/wp-content/uploads/2021/12/274-scaled.jpg",
       "slug": "product-slug-10",
       "isNew": false,
