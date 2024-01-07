@@ -8,6 +8,8 @@ import PortableText from 'react-portable-text'
 
 const SingleProduct = () => {
     const product = {
+        "_id": 1,
+        "stock": 10,
         "imageLink": "https://artisanclick.com/wp-content/uploads/2021/12/274-scaled.jpg",
         "slug": "product-slug-1",
         "isNew": true,
@@ -26,6 +28,7 @@ const SingleProduct = () => {
             "isNew": true,
             "title": "Product 1",
             "rowprice": 125,
+            "stock": 10,
             "price": 99.99,
             "brand": "Brand A",
             "ratings": 4.5
@@ -37,6 +40,7 @@ const SingleProduct = () => {
             "isNew": false,
             "title": "Product 2",
             "rowprice": 150,
+            "stock": 10,
             "price": 129.99,
             "brand": "Brand B",
             "ratings": 4.8
@@ -48,6 +52,7 @@ const SingleProduct = () => {
             "isNew": true,
             "title": "Product 3",
             "rowprice": 99,
+            "stock": 10,
             "price": 79.99,
             "brand": "Brand C",
             "ratings": 3.9
@@ -59,6 +64,7 @@ const SingleProduct = () => {
             "isNew": false,
             "title": "Product 4",
             "rowprice": 225,
+            "stock": 10,
             "price": 199.99,
             "brand": "Brand A",
             "ratings": 4.2
@@ -70,6 +76,7 @@ const SingleProduct = () => {
             "isNew": true,
             "title": "Product 5",
             "rowprice": 175,
+            "stock": 10,
             "price": 149.99,
             "brand": "Brand B",
             "ratings": 5
@@ -81,6 +88,7 @@ const SingleProduct = () => {
             "isNew": false,
             "title": "Product 6",
             "rowprice": 85,
+            "stock": 10,
             "price": 69.99,
             "brand": "Brand C",
             "ratings": 3.5
@@ -92,6 +100,7 @@ const SingleProduct = () => {
             "isNew": true,
             "title": "Product 7",
             "rowprice": 110,
+            "stock": 10,
             "price": 89.99,
             "brand": "Brand A",
             "ratings": 4.1
@@ -103,6 +112,7 @@ const SingleProduct = () => {
             "isNew": false,
             "title": "Product 8",
             "rowprice": 140,
+            "stock": 10,
             "price": 119.99,
             "brand": "Brand B",
             "ratings": 4.7
@@ -114,6 +124,7 @@ const SingleProduct = () => {
             "isNew": true,
             "title": "Product 9",
             "rowprice": 95,
+            "stock": 10,
             "price": 74.99,
             "brand": "Brand C",
             "ratings": 3.8
@@ -125,6 +136,7 @@ const SingleProduct = () => {
             "isNew": false,
             "title": "Product 10",
             "rowprice": 200,
+            "stock": 10,
             "price": 179.99,
             "brand": "Brand A",
             "ratings": 4.6

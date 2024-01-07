@@ -20,6 +20,7 @@ export default function Home() {
       "isNew": true,
       "title": "Product 1",
       "rowprice": 125,
+      "stock": 10,
       "price": 99.99,
       "brand": "Brand A",
       "ratings": 4.5
@@ -31,6 +32,7 @@ export default function Home() {
       "isNew": false,
       "title": "Product 2",
       "rowprice": 150,
+      "stock": 10,
       "price": 129.99,
       "brand": "Brand B",
       "ratings": 4.8
@@ -42,6 +44,7 @@ export default function Home() {
       "isNew": true,
       "title": "Product 3",
       "rowprice": 99,
+      "stock": 10,
       "price": 79.99,
       "brand": "Brand C",
       "ratings": 3.9
@@ -53,6 +56,7 @@ export default function Home() {
       "isNew": false,
       "title": "Product 4",
       "rowprice": 225,
+      "stock": 10,
       "price": 199.99,
       "brand": "Brand A",
       "ratings": 4.2
@@ -64,6 +68,7 @@ export default function Home() {
       "isNew": true,
       "title": "Product 5",
       "rowprice": 175,
+      "stock": 10,
       "price": 149.99,
       "brand": "Brand B",
       "ratings": 5
@@ -75,6 +80,7 @@ export default function Home() {
       "isNew": false,
       "title": "Product 6",
       "rowprice": 85,
+      "stock": 10,
       "price": 69.99,
       "brand": "Brand C",
       "ratings": 3.5
@@ -86,6 +92,7 @@ export default function Home() {
       "isNew": true,
       "title": "Product 7",
       "rowprice": 110,
+      "stock": 10,
       "price": 89.99,
       "brand": "Brand A",
       "ratings": 4.1
@@ -97,6 +104,7 @@ export default function Home() {
       "isNew": false,
       "title": "Product 8",
       "rowprice": 140,
+      "stock": 10,
       "price": 119.99,
       "brand": "Brand B",
       "ratings": 4.7
@@ -108,6 +116,7 @@ export default function Home() {
       "isNew": true,
       "title": "Product 9",
       "rowprice": 95,
+      "stock": 10,
       "price": 74.99,
       "brand": "Brand C",
       "ratings": 3.8
@@ -119,6 +128,7 @@ export default function Home() {
       "isNew": false,
       "title": "Product 10",
       "rowprice": 200,
+      "stock": 10,
       "price": 179.99,
       "brand": "Brand A",
       "ratings": 4.6
