@@ -12,7 +12,6 @@ export const asagoSlice = createSlice({
             // console.log(action);
             // console.log("state: ", state.productData);
             const existingProduct = state?.productData?.find((item) => {
-                console.log("item: ", item._id, action.payload._id);
                 return item?._id === action?.payload?._id;
             });
             // console.log("Existed: ", existingProduct);

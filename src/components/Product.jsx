@@ -46,8 +46,8 @@ const Product = ({ product, bg }) => {
                             Quick view
                         </Link>
                     </div>
-                    {product?.isnew && (
-                        <div className="absolute top-2 right-2 z-50">
+                    {product?.isNew && (
+                        <div className="absolute top-2 right-2 z-49">
                             <p className="bg-primeColor px-4 py-1 text-white flex justify-center items-center text-sm font-semibold hover:bg-black duration-300 cursor-pointer rounded-md">
                                 New
                             </p>
