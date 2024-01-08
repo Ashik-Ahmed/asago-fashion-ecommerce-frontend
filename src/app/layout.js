@@ -23,7 +23,7 @@ export default function RootLayout({ children }) {
         <Layout>
           <Navbar />
           <HeaderBottom />
-          <PageButton />
+          {/* <PageButton /> */}
           {children}
         </Layout>
       </body>
