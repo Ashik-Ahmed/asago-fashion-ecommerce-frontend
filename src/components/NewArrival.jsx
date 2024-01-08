@@ -41,7 +41,7 @@ const NewArrival = ({ products }) => {
         ],
     };
     return (
-        <Container className="-mt-40">
+        <Container className="md:-mt-40">
             <div>
                 <Slider {...settings}>
                     {products?.map((item) => (
