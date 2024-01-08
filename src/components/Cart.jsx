@@ -15,6 +15,7 @@ const Cart = () => {
     const { productData } = useSelector((state) => state.asago);
     const dispatch = useDispatch();
     const [totalAmt, setTotalAmt] = useState(0);
+    const [clearCart, setClearCart] = useState(false)
     // const { data: session } = useSession();
 
     useEffect(() => {
@@ -27,9 +28,8 @@ const Cart = () => {
     }, [productData]);
 
     const handleReset = () => {
-        const confirmed = window.confirm("Are you sure to reset your Cart?");
-        confirmed && dispatch(resetCart());
-        toast.success("Cart resetted successfully!");
+        dispatch(resetCart());
+        setClearCart(false)
     };
 
     // Stripe payment
@@ -76,7 +76,7 @@ const Cart = () => {
                         ))}
                     </div>
                     <button
-                        onClick={handleReset}
+                        onClick={() => setClearCart(true)}
                         className="py-2 px-10 bg-red-500 text-white font-semibold uppercase mb-4 hover:bg-red-700 duration-300"
                     >
                         Reset cart
@@ -157,7 +157,57 @@ const Cart = () => {
                     </div>
                 </motion.div>
             )}
-        </Container>
+
+            {
+                clearCart && (
+                    <div>
+                        {/* HTML Structure */}
+                        <div className="fixed inset-0 z-50 flex items-center justify-center overflow-x-hidden overflow-y-auto outline-none focus:outline-none transition-opacity duration-500 delay-300">
+                            <div className="relative w-auto max-w-sm mx-auto my-6">
+                                {/* Modal Content */}
+                                <div className="relative flex flex-col w-full bg-white border-0 rounded-lg shadow-lg outline-none focus:outline-none">
+                                    {/* Header */}
+                                    <div className="flex items-start justify-between p-5 border-b border-solid border-gray-300 rounded-t">
+                                        <h3 className="text-2xl font-semibold">Cart Warning</h3>
+                                        <button
+                                            onClick={() => setClearCart(false)}
+                                            className="p-1 ml-auto bg-transparent border-0 text-black float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
+                                        >
+                                            <span className="bg-transparent text-black h-6 w-6 text-2xl block outline-none focus:outline-none">×</span>
+                                        </button>
+                                    </div>
+                                    {/* Body */}
+                                    <div className="relative p-6 flex-auto">
+                                        <p className="my-4 text-gray-600 text-lg leading-relaxed">
+                                            Your cart contains items that are about to expire. Please confirm to clear your cart.
+                                        </p>
+                                    </div>
+                                    {/* Footer */}
+                                    <div className="flex items-center justify-end p-6 border-t border-solid border-gray-300 rounded-b">
+                                        <button
+                                            onClick={() => setClearCart(false)}
+                                            className="text-red-500 background-transparent font-bold px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                                            type="button"
+                                        >
+                                            Close
+                                        </button>
+                                        <button
+                                            onClick={handleReset}
+                                            className="bg-red-500 text-white active:bg-red-600 font-bold text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                                            type="button"
+                                        >
+                                            Yes, Clear
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="fixed inset-0 z-40 bg-black opacity-25"></div>
+                    </div>
+                )}
+
+
+        </Container >
     );
 };
 
