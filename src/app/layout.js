@@ -6,6 +6,8 @@ import "slick-carousel/slick/slick-theme.css";
 import PageButton from '@/components/PageButton';
 import HeaderBottom from '@/components/HeaderBottom';
 import Layout from '@/components/Layout';
+import Footer from '@/components/Footer';
+import FooterBottom from '@/components/FooterBottom';
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -25,6 +27,8 @@ export default function RootLayout({ children }) {
           <HeaderBottom />
           {/* <PageButton /> */}
           {children}
+          <Footer />
+          <FooterBottom />
         </Layout>
       </body>
     </html>
