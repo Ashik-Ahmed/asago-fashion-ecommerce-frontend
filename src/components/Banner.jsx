@@ -118,7 +118,7 @@ const Banner = ({ banners }) => {
                             height={2000}
                             className="w-full max-h-[650px] object-cover"
                         />
-                        <div className="w-full h-40 bg-gradient-to-t from-gray-100 to-transparent absolute bottom-0 z-20" />
+                        <div className="w-full h-40 md:bg-gradient-to-t md:from-gray-100 md:to-transparent absolute bottom-0 z-20" />
                     </Link>
                 ))}
             </Slider>
