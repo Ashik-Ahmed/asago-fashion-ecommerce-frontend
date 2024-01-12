@@ -57,9 +57,9 @@ const Product = ({ product, bg }) => {
             </div>
             <div className="max-w-80 py-6 flex flex-col gap-1 px-4">
                 <div className="flex items-center justify-between">
-                    <h2 className="text-lg text-primeColor font-bold">
+                    <Link href={`/product/${product?.slug}`} className="text-lg text-primeColor font-bold">
                         {product?.title.substring(0, 15)}
-                    </h2>
+                    </Link>
                     <div className="flex items-center gap-2">
                         <p className="text-[#767676] text-xs line-through">
                             ${product?.rowprice}
