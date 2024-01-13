@@ -9,12 +9,10 @@ export const asagoSlice = createSlice({
     initialState,
     reducers: {
         addToCart: (state, action) => {
-            // console.log(action);
-            // console.log("state: ", state.productData);
             const existingProduct = state?.productData?.find((item) => {
                 return item?._id === action?.payload?._id;
             });
-            // console.log("Existed: ", existingProduct);
+
             if (existingProduct) {
                 existingProduct.quantity = (existingProduct.quantity || 1) + (action.payload.quantity || 1);
             } else {
