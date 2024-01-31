@@ -141,6 +141,7 @@ export default function Home() {
       <NewArrival products={products} />
       <HomeBanner />
       <BestSellers products={products.slice(0, 4)} title="Best Sellers" />
+      <BestSellers products={products.slice(0, 4)} title="Top Rated" />
       <YearProduct />
     </main>
   )
