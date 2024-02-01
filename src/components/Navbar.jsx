@@ -23,6 +23,10 @@ const Navbar = () => {
             link: "/",
         },
         {
+            title: "Category",
+            link: "/category",
+        },
+        {
             title: "Shop",
             link: "/shop",
         },
@@ -62,7 +66,7 @@ const Navbar = () => {
                     {navBarList.map((item) => (
                         <Link
                             href={item?.link}
-                            key={item?.link}
+                            key={item?.title}
                             className={`flex hover:font-medium w-20 h-6 justify-center items-center px-12 text-gray-600 hover:underline underline-offset-4 decoration-[1px] hover:text-gray-950 md:border-r-[2px] border-r-gray-400 duration-200 last:border-r-0 ${pathname === item?.link && "text-gray-950 underline font-bold"
                                 }`}
                         >
@@ -93,7 +97,7 @@ const Navbar = () => {
                                             key={item._id}
                                         >
                                             <Link
-                                                href={item.link}
+                                                href={item?.link}
                                                 // state={{ data: location.split("/")[1] }}
                                                 onClick={() => setSidenav(false)}
                                             >
