@@ -140,9 +140,12 @@ export default function Home() {
       <Banner banners={banners} />
       <NewArrival products={products} />
       <HomeBanner />
-      <BestSellers products={products.slice(0, 4)} title="Best Sellers" />
-      <BestSellers products={products.slice(0, 4)} title="Top Rated" />
+      <BestSellers products={products.slice(0, 4)} title="New Arrival" />
+      <BestSellers products={products.slice(0, 4)} title="Best Seller" />
       <YearProduct />
+      <BestSellers products={products.slice(0, 4)} title="Top Rated" />
+      <BestSellers products={products.slice(0, 4)} title="All Products" />
+      <BestSellers products={products.slice(0, 4)} title="Free Delivery" />
     </main>
   )
 }

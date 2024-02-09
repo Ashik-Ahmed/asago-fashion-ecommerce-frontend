@@ -40,10 +40,10 @@ const Navbar = () => {
         },
     ];
     return (
-        <div className="w-full h-20 bg-white border-b-[1px] border-b-gray-400 sticky top-0 z-50">
+        <div className="w-full h-20 bg-sky-400 border-b-[1px] border-b-gray-400 sticky top-0 z-50">
             <nav className="h-full max-w-screen-xl mx-auto px-4 xl:px-0 flex items-center justify-between gap-2">
                 <Link href={"/"}>
-                    <Image src={logo} alt="logo" className="w-20" />
+                    <Image src={logo} alt="logo" className="w-32" />
                 </Link>
                 {/* <div className="relative w-full hidden lg:inline-flex lg:w-[600px] h-10 text-base text-primeColor border-[1px] border-black items-center gap-2 justify-between px-6 rounded-md">
                     <input
@@ -67,7 +67,7 @@ const Navbar = () => {
                         <Link
                             href={item?.link}
                             key={item?.title}
-                            className={`flex hover:font-medium w-20 h-6 justify-center items-center px-12 text-gray-600 hover:underline underline-offset-4 decoration-[1px] hover:text-gray-950 md:border-r-[2px] border-r-gray-400 duration-200 last:border-r-0 ${pathname === item?.link && "text-gray-950 underline font-bold"
+                            className={`flex hover:font-medium w-20 h-6 justify-center items-center px-12 text-white hover:underline underline-offset-4 decoration-[1px] hover:text-gray-950 md:border-r-[2px] border-r-white-400 duration-200 last:border-r-0 ${pathname === item?.link && "text-gray-950 underline font-bold"
                                 }`}
                         >
                             {item?.title}
