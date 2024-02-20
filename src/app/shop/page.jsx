@@ -18,6 +18,7 @@ const ShopPage = () => {
                 "imageLink": "https://artisanclick.com/wp-content/uploads/2021/12/274-scaled.jpg",
                 "slug": "product-slug-1",
                 "isNew": true,
+                "isFreeShipping": true,
                 "title": "Product 1",
                 "rowprice": 125,
                 "stock": 10,

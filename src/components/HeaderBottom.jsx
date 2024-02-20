@@ -86,7 +86,7 @@ const HeaderBottom = () => {
                                 <Link href="/category/bags" className="text-gray-400 px-4 py-1 border-b-[1px] border-b-gray-400  hover:border-b-white hover:text-white duration-300 cursor-pointer">
                                     Bags
                                 </Link>
-                                <Link href="/category/hoome-appliances" className="text-gray-400 px-4 py-1 border-b-[1px] border-b-gray-400  hover:border-b-white hover:text-white duration-300 cursor-pointer">
+                                <Link href="/category/home-appliances" className="text-gray-400 px-4 py-1 border-b-[1px] border-b-gray-400  hover:border-b-white hover:text-white duration-300 cursor-pointer">
                                     Home appliances
                                 </Link>
                             </motion.ul>
