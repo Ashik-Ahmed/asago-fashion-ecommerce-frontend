@@ -129,7 +129,7 @@ const CategoryPage = ({ params }) => {
     ]
 
     return (
-        <div className='text-lg font-semibold'>
+        <div className='max-w-screen-2xl mx-auto'>
             {/* Your category page content */}
             <div className="mx-auto flex flex-col lg:flex-row space-x-0 lg:space-x-2">
                 {/* Sidebar with Sorting Options */}
@@ -184,7 +184,7 @@ const CategoryPage = ({ params }) => {
                     </div>
 
                     {/* Product Cards */}
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 mt-2">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 m-2">
                         {products.map((product) => (
                             <Product key={product._id} product={product} />
                         ))}
