@@ -1,9 +1,11 @@
+"use client";
+
 import Container from '@/components/Container'
 import Onsale from '@/components/OnSale'
 import ProudctInfo from '@/components/ProductInfo'
 import { RichText } from '@/components/RichText'
 import Image from 'next/image'
-import React from 'react'
+import React, { useState } from 'react'
 import PortableText from 'react-portable-text'
 
 const SingleProduct = () => {
@@ -20,6 +22,9 @@ const SingleProduct = () => {
         "ratings": 4.5,
         "body": "This is the body"
     }
+
+
+
     const products = [
         {
             _id: 1,
@@ -149,7 +154,7 @@ const SingleProduct = () => {
                 <div>
                     <Onsale products={products.slice(0, 3)} />
                 </div>
-                <div className="h-full xl:col-span-2">
+                {/* <div className="h-full xl:col-span-2">
                     <Image
                         src={product?.imageLink}
                         alt="product image"
@@ -157,8 +162,8 @@ const SingleProduct = () => {
                         width={500}
                         height={500}
                     />
-                </div>
-                <div className="w-full md:col-span-2 xl:col-span-3 xl:p-14 flex flex-col gap-6 justify-center">
+                </div> */}
+                <div className="w-full md:col-span-2 xl:col-span-5 xl:p-14 flex flex-col gap-6 justify-center">
                     <ProudctInfo product={product} />
                 </div>
             </div>
