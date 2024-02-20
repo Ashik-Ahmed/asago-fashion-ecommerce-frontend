@@ -69,26 +69,26 @@ const HeaderBottom = () => {
                                 initial={{ y: 30, opacity: 0 }}
                                 animate={{ y: 0, opacity: 1 }}
                                 transition={{ duration: 0.5 }}
-                                className="absolute top-28 z-50 bg-primeColor w-auto text-[#767676] h-auto p-4 pb-6"
+                                className="flex flex-col absolute top-28 z-50 bg-primeColor w-auto text-[#767676] h-auto p-4 pb-6"
                             >
-                                <li className="text-gray-400 px-4 py-1 border-b-[1px] border-b-gray-400 hover:border-b-white hover:text-white duration-300 cursor-pointer">
+                                <Link href="/category/accessories" className="text-gray-400 px-4 py-1 border-b-[1px] border-b-gray-400 hover:border-b-white hover:text-white duration-300 cursor-pointer">
                                     Accessories
-                                </li>
-                                <li className="text-gray-400 px-4 py-1 border-b-[1px] border-b-gray-400 hover:border-b-white hover:text-white duration-300 cursor-pointer">
+                                </Link>
+                                <Link href="/category/furnitures" className="text-gray-400 px-4 py-1 border-b-[1px] border-b-gray-400 hover:border-b-white hover:text-white duration-300 cursor-pointer">
                                     Furniture
-                                </li>
-                                <li className="text-gray-400 px-4 py-1 border-b-[1px] border-b-gray-400 hover:border-b-white hover:text-white duration-300 cursor-pointer">
+                                </Link>
+                                <Link href="/category/electronics" className="text-gray-400 px-4 py-1 border-b-[1px] border-b-gray-400 hover:border-b-white hover:text-white duration-300 cursor-pointer">
                                     Electronics
-                                </li>
-                                <li className="text-gray-400 px-4 py-1 border-b-[1px] border-b-gray-400 hover:border-b-white hover:text-white duration-300 cursor-pointer">
+                                </Link>
+                                <Link href="/category/clothes" className="text-gray-400 px-4 py-1 border-b-[1px] border-b-gray-400 hover:border-b-white hover:text-white duration-300 cursor-pointer">
                                     Clothes
-                                </li>
-                                <li className="text-gray-400 px-4 py-1 border-b-[1px] border-b-gray-400  hover:border-b-white hover:text-white duration-300 cursor-pointer">
+                                </Link>
+                                <Link href="/category/bags" className="text-gray-400 px-4 py-1 border-b-[1px] border-b-gray-400  hover:border-b-white hover:text-white duration-300 cursor-pointer">
                                     Bags
-                                </li>
-                                <li className="text-gray-400 px-4 py-1 border-b-[1px] border-b-gray-400  hover:border-b-white hover:text-white duration-300 cursor-pointer">
+                                </Link>
+                                <Link href="/category/hoome-appliances" className="text-gray-400 px-4 py-1 border-b-[1px] border-b-gray-400  hover:border-b-white hover:text-white duration-300 cursor-pointer">
                                     Home appliances
-                                </li>
+                                </Link>
                             </motion.ul>
                         )}
                     </div>

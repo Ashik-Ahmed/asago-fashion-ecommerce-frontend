@@ -1,9 +1,12 @@
+import { useRouter } from 'next/navigation';
 import React from 'react';
 
-const CategoryPage = () => {
+const CategoryPage = ({ params }) => {
+
     return (
-        <div>
-            Hello from category page.....
+        <div className='text-lg font-semibold'>
+            <p>Hello from category page.</p>
+            <p>Category is: <span className='text-red-500'>{params.slug}</span></p>
         </div>
     );
 };
