@@ -8,6 +8,8 @@ import { AiOutlineShopping } from "react-icons/ai";
 import { useDispatch } from "react-redux";
 import { addToCart } from "@/redux/asagoSlice";
 import toast, { Toaster } from "react-hot-toast";
+import { FaShippingFast } from "react-icons/fa";
+
 
 const Product = ({ product, bg }) => {
 
@@ -46,13 +48,27 @@ const Product = ({ product, bg }) => {
                             Quick view
                         </Link>
                     </div>
-                    {product?.isNew && (
-                        <div className="absolute top-2 right-2 z-49">
-                            <p className="bg-primeColor px-4 py-1 text-white flex justify-center items-center text-sm font-semibold hover:bg-black duration-300 cursor-pointer rounded-md">
-                                New
-                            </p>
+                    <div className="flex space-x-4">
+                        <div>
+                            {product?.isNew && (
+                                <div className="absolute top-2 left-2 z-49">
+                                    <p className="bg-red-500 px-4 py-1 text-white flex justify-center items-center text-sm font-semibold hover:shadow-lg duration-300 cursor-pointer rounded-md">
+                                        New
+                                    </p>
+                                </div>
+                            )}
+                            <div>
+                            </div>
+                            {product?.isFreeShipping && (
+                                <div className="absolute top-2 right-2 z-49">
+                                    <div className="bg-yellow-500 px-4 py-1 space-x-2 text-white flex justify-center items-center text-sm font-semibold  hover:shadow-lg duration-300 cursor-pointer rounded-md">
+                                        <FaShippingFast size={20} color="#222" />
+                                        <p>Free Shipping</p>
+                                    </div>
+                                </div>
+                            )}
                         </div>
-                    )}
+                    </div>
                 </div>
             </div>
             <div className="max-w-80 py-6 flex flex-col gap-1 px-4">
